@@ -1,6 +1,6 @@
 import { memo, useState } from 'react'
 import "./style.scss"
-import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiOutlineUser, AiFillMail, AiFillCar, AiOutlineMenu  } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiOutlineUser, AiFillMail, AiFillCar, AiOutlineMenu, AiOutlinePhone  } from "react-icons/ai";
 import { BsCart4 } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import { formatter } from 'utils/fomater';
@@ -173,6 +173,28 @@ const Header = () => {
                   <input type='text' name='' value='' placeholder='Bạn đang làm gì' />
                   <button type='submit'>Tìm kiếm</button>
                 </form>
+              </div>
+              <div className='hero__search__phone'>
+                <div className='hero__search__phone__icon'>
+                  <AiOutlinePhone/>
+                </div>
+                <div className='hero__search__phone__text'>
+                  <p>0656.777.999</p>
+                  <span> Hỗ trợ 24/7 </span>
+                </div>
+              </div>
+            </div>
+            <div className='hero__item'>
+              <div className='hero__text'>
+                <span>Trái cây tươi</span>
+                <h2>
+                  Rau quả <br/>
+                  sạch 100%
+                </h2>
+                <p>Miễn phí giao hàng tận nơi</p>
+                <Link to="" className='primary-btn'>
+                  Mua ngay
+                </Link>
               </div>
             </div>
           </div>
